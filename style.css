@@ -59,10 +59,23 @@ body {
   font-weight: bold;
   font-family: "Work Sans", sans-serif;
 }
+
 .profil p {
   font-size: 1.2em;
   margin: 4px 0;
   padding: 5px;
+  width: 40ch;
+  overflow: hidden;
+  text-wrap: nowrap;
+  animation: typing 7s steps(20, end) infinite alternate forwards;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  white-space: nowrap;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 .links {
   gap: 10px;
